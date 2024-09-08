@@ -6,9 +6,6 @@ There are such data structures:
 1) [Heap](#heap)
     - [MaxHeap](#maxheap)
     - [MinHeap](#minheap)
-<details open>
-<summary>Heap Info</summary>
-
 ## Heap
 Tree-based sorted data structure.
 Every operation takes about $O(log{n})$.  
@@ -16,9 +13,6 @@ Every slice can be transformed to the Heap with $O(n)$ complexity.
 It's based on slices, so such functions as len or cap are also **working** with it.   
    
 Every Heap type supports all int types, all uint types (including uintptr), floats, and strings.
-<details>
-<summary>MaxHeap</summary>
-
 ### MaxHeap
 Import path: ```github.com/mosgor/GoStructs/pkg/maxHeap```  
 Heap sorted from the biggest number to the smallest.  
@@ -33,11 +27,6 @@ When this method is used on an empty Heap or when the receiver is nil,
 
 There is only one function:
 - **Heapify.** It takes slice as an argument and returns new Heap consisting of slice elements.
-
-</details>
-<details>
-<summary>MinHeap</summary>
-
 ### MinHeap
 Import path: ```github.com/mosgor/GoStructs/pkg/minHeap```  
 Heap sorted from the smallest number to the biggest.  
@@ -53,5 +42,3 @@ There are such methods implemented in MinHeap:
 
 There is only one function:
 - **Heapify.** It takes slice as an argument and returns new Heap consisting of slice elements.
-</details>
-</details>
