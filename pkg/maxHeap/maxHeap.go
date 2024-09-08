@@ -1,5 +1,5 @@
 // Package maxHeap contains an implementation of the Heap data structure
-// which elements are sorted from largest to smallest and an implementation of methods
+// which elements are sorted from the biggest to the smallest and an implementation of methods
 // that can be used to work with it.
 //
 // Heap is a tree-based data structure, which in fact is just a specifically ordered slice.
