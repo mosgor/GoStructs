@@ -6,6 +6,7 @@ There are such data structures:
 1) [Heap](#heap)
     - [MaxHeap](#maxheap)
     - [MinHeap](#minheap)
+2) [Queue](#queue)
 ## Heap
 Tree-based sorted data structure.
 Every operation takes about $O(log{n})$.  
@@ -42,3 +43,28 @@ There are such methods implemented in MinHeap:
 
 There is only one function:
 - **Heapify.** It takes slice as an argument and returns new Heap consisting of slice elements.
+
+## Queue
+Import path: ```github.com/mosgor/GoStructs/pkg/queue```   
+Queue is a linked list type data structure following the FIFO (First In - First Out) principle.
+It allows adding an element to the end, and extracting an element from the beginning.
+Every method takes $O(1)$.  
+The only way to get a random element from a queue is to iterate through it with a cycle.
+So it takes $O(n)$.
+That's why if you need to get random elements often, it is better to use non-list structures.   
+Every version of a queue can take any type.
+
+Methods of basic queue type:
+- **Push**. Add an element at the end of the queue. Takes an element value as an argument and return nothing.
+- **Pop**.
+  Extracts the first element of the queue and returns it. 
+Takes nothing.
+  Also returns boolean value indicating whether the operation was successful.
+  Returns default value of a type and false if the queue is empty.
+- **Front**.
+  Returns the first element of the queue. 
+  Takes nothing.
+  Also returns boolean value indicating whether the operation was successful.
+  Returns default value of a type and false if the queue is empty.
+- **Clear**. Makes the queue empty. Takes nothing and returns nothing.
+- **Size**. Returns the size of the queue.
